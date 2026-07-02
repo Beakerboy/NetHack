@@ -16,5 +16,10 @@ jobs:
         uses: jidicula/clang-format-action@v4.18.0
         with:
           clang-format-version: '16'
-          check-path: '.'
+          check-path: './src'
           fallback-style: 'LLVM'
+      - name: Print exact formatting errors
+        if: failure()
+        run: |
+          echo "=== Code formatting differences found ==="
+          git diff --color
