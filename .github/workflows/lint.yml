@@ -17,4 +17,4 @@ jobs:
         with:
           clang-format-version: '16'
           check-path: '.'
-          fallback-style: 'file'
+          fallback-style: 'LLVM'
