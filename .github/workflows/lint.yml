@@ -17,4 +17,4 @@ jobs:
         with:
           clang-format-version: '16'
           check-path: '.'
-          fallback-style: 'Mozilla' # Options: LLVM, Google, Chromium, Mozilla, WebKit
+          fallback-style: 'file'
